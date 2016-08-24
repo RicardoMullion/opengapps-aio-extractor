@@ -4,7 +4,7 @@ unzip *.zip -d org
 rm -rf tmp > /dev/null 2>&1
 mkdir -p tmp
 find . -name "*.tar.xz" -exec tar -xf {} -C tmp/ \;
-rm -rf sys > /dev/null 2>&1
+rm -rf system > /dev/null 2>&1
 mkdir -p system
 for dir in tmp/*/
 do
