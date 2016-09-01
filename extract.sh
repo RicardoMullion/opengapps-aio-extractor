@@ -14,4 +14,6 @@ do
   echo "  - including $pkg/$dpi"
   rsync -aq $pkg/$dpi/ system/
 done
+rm -rf tmp
+rm -rf org
 echo "extract system folder done"
