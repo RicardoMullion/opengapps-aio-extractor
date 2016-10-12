@@ -6,7 +6,11 @@ first clone the script
 git clone https://github.com/bjsiu/opengapps-aio-extractor.git gappsextract
 cd gappsextract
 ```
-then download the opengapps (.zip) file and place into the gappsextract folder and run the extract.sh
+next make a sub dir call "gapps"
+```
+mkdir -p gapps
+```
+then download the opengapps (.zip) file and place into the sub "gapps" folder and run the extract.sh
 ```
 ./extract.sh
 ```
