@@ -3,7 +3,7 @@ echo "start extract opengapps package"
 unzip "gapps/*.zip" -d "gapps/pkg"
 rm -rf gapps/tmp > /dev/null 2>&1
 mkdir -p gapps/tmp
-find . -name "*.tar.xz" -exec tar -xf {} -C gapps/tmp/ \;
+find . -name "*.tar.[g|l|x]z" -exec tar -xf {} -C gapps/tmp/ \;
 rm -rf gapps/sys > /dev/null 2>&1
 mkdir -p gapps/sys
 for dir in gapps/tmp/*/
